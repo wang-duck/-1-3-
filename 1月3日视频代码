@@ -28,8 +28,8 @@ def parsePage(ilt,html):
             subtitle_num = re.split(r'\n', subtitle_nums[i])[1]
             up_date = re.split(r'\n', up_dates[i])[1]
             ilt.append([vedio_title, vedio_link, up_name, up_link, watch_num, subtitle_num, up_date])
-    except Exception as e:
-        print(e)
+    except:
+        print("产生异常")
 
 
 def printUSERList(ilt):
